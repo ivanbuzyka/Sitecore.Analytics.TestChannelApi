@@ -2,7 +2,7 @@
 <script runat="server">
   
   void Page_Load(object sender, System.EventArgs e) {
-    //Sitecore.Analytics.Tracker.Current.Session.IdentifyAs("sigmatest", "user_" + Guid.NewGuid());
+    //Sitecore.Analytics.Tracker.Current.Session.IdentifyAs("test", "user_" + Guid.NewGuid());
     Sitecore.Analytics.Tracker.Current.EndTracking();
     Session.Abandon();
     Response.Write("Session is abandoned!");
